@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Путешествия по Европе</title>
+  <link rel="stylesheet" href="build/css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-elem1" src="img/label.svg" alt="Логотип компании Way y красного цвета" width="44" height="17">
+      <img class="page-header__logo-elem2" src="img/Red hook.svg" alt="Красный крючок для последней буквы" width="11.78" height="13.93">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="#">О путешествии</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Цены</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-page">
+    <section class="main-page__intro">
+      <h2 class="visually-hidden">Картинка интро сайта Путешествия по Европе</h2>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <h2>Следующие путешествия</h2>
+      <ul>
+        <li>Марсель</li>
+        <li>Ним</li>
+        <li>Монпелье</li>
+        <li>Барселона</li>
+        <li>Пальма</li>
+      </ul>
+      <ul>
+        <li>Сардиния</li>
+        <li>Палермо</li>
+        <li>Катания</li>
+        <li>Неаполь</li>
+        <li>Рим</li>
+      </ul>
+      <ul>
+        <li>Корс</li>
+        <li>Ницца</li>
+        <li>Монако</li>
+        <li>Динь-ле-Бен</li>
+        <li>Гренобль</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Наши контакты</h2>
+      <a href="#">Почта</a>
+      <a href="tel:+7(499)78468446">+7 (499) -784-684-46</a>
+    </section>
+    <section>
+      <h2>Корпоративные путешествия</h2>
+      <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+    </section>
+  </footer>
 </body>
 </html>
