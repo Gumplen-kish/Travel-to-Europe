@@ -1,0 +1,39 @@
+.main-nav {
+  position: relative;
+  width: 320px;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  left: 270px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: @background-button;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 13.75px;
+    top: 17.5px;
+    width: 22.5px;
+    height: 1px;
+    background-color: #dadada;
+    box-shadow: 0 6px 0 0 #dadada, 0 12px 0 0 #dadada;
+  }
+}
