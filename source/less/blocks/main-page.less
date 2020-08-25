@@ -1,5 +1,6 @@
 .main-page {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -10,7 +11,7 @@
   width: 320px;
   height: 235.09px;
   background:
-    url("../../img/Rest.svg") no-repeat 53% 51%,
+    url("../../img/Rest-mobile.svg") no-repeat 53% 51%,
     url("../../img/intro-mobile.png") no-repeat 100% 100%;
   background-size: 209px 61px, 320px 235px;
 }
@@ -71,5 +72,45 @@
 
   &:hover {
     background: @background-button-hover;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-page__intro {
+    position: relative;
+    width: 768px;
+    height: 345px;
+    background:
+      url("../../img/Rest-tablet.svg") no-repeat 50% 22%,
+      url("../../img/intro-tablet.png") no-repeat 100% 100%;
+    background-size: 387px 36px, 768px 345px;
+  }
+
+  .main-page__wrapper {
+    position: absolute;
+    content: "";
+    top: 149px;
+    left: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-page__wrapper-text {
+    width: 398px;
+    color: @white;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+  .main-page__wrapper-button {
+    width: 250px;
+    margin-left: 0;
+    padding-right: 100px;
+    padding-left: 35px;
+
+    &::after {
+      left: 196px;
+    }
   }
 }

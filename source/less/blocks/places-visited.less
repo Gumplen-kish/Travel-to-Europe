@@ -1,7 +1,8 @@
 .places-visited__wrapper {
-  display: block;
-  width: 320px;
-  margin-top: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 89px;
 }
 
 .places-visited__wrapper-title {
@@ -15,10 +16,11 @@
 }
 
 .places-visited__wrapper-text {
-  width: 288px;
   height: 84px;
-  margin-top: 17px;
+  margin-top: 0;
   margin-left: 16px;
+  margin-bottom: 3px;
+  padding-right: 15px;
   font-size: 16px;
   line-height: 28px;
   /* or 175% */
@@ -29,7 +31,6 @@
 
 .places-visited__involucre {
   margin-left: 16px;
-  margin-top: 20px;
 }
 
 .places-visited__list {
@@ -37,21 +38,14 @@
   flex-direction: column;
   list-style: none;
   padding: 0;
+  margin-bottom: 3px;
 }
 
 .places-visited__item {
   position: relative;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   margin-top: 0;
-
-  &:nth-of-type(3) {
-    margin-bottom: 33px;
-  }
-
-  &:last-child {
-    margin-bottom: 20px;
-  }
 }
 
 .places-visited__wrapper-country {
@@ -72,4 +66,41 @@
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 1.7px;
+}
+
+@media (min-width: @tablet-width) {
+  .places-visited__wrapper {
+    margin-top: 55px;
+  }
+
+  .places-visited__wrapper-title {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .places-visited__wrapper-text {
+    padding-left: 198px;
+    padding-right: 214px;
+  }
+
+  .places-visited__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 9px;
+    justify-content: space-around;
+    padding-left: 52px;
+    padding-right: 67px;
+  }
+
+  .places-visited__item {
+    margin-bottom: 15px;
+
+    &:nth-of-type(3) {
+      margin-bottom: 27px;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 27px;
+    }
+  }
 }
