@@ -84,3 +84,57 @@
 .feedback-item__button {
   .button-style-buy-tour();
 }
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    display: flex;
+    align-items: center;
+    width: 768px;
+    height: 455px;
+    margin-top: 120px;
+    background-image: url("../../img/feedback-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px 456px;
+  }
+
+  .feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 658px;
+    height: 311px;
+    background-color: @white;
+  }
+
+  .feedback-title {
+    margin-top: 48px;
+    margin-bottom: 13px;
+  }
+
+  .feedback-text {
+    margin-bottom: 19px;
+  }
+
+  .feedback-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .feedback-item {
+    margin-bottom: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .feedback-item__input {
+    width: 269px;
+  }
+
+  .feedback-item__button {
+    width: 250px;
+  }
+}
+

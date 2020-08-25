@@ -163,3 +163,81 @@
   color: @footer-text;
   letter-spacing: 1.05px;
 }
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-next-travel__wrapper {
+    width: 375px;
+    height: 250px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &::after {
+      bottom: 0;
+      left: 10px;
+      width: 768px;
+    }
+  }
+
+  .footer-next-travel__list {
+    width: 125px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-next-travel__item {
+    padding-left: 12px;
+    text-align: left;
+  }
+
+  .footer-next-travel__title {
+    margin-top: 41px;
+    margin-left: 11px;
+    margin-right: 90px;
+    margin-bottom: 0;
+  }
+
+  .footer-next-travel__text {
+    text-align: left;
+  }
+
+  .footer-ours-contacts {
+    width: 342px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 41px;
+      left: 28px;
+      width: 1px;
+      height: 71%;
+      border: 1px solid #d7d9df;
+      opacity: 0.5;
+    }
+  }
+
+  .footer-ours-contacts__title {
+    margin-top: 41px;
+    margin-left: 8px;
+  }
+
+  .footer-ours-contacts__mail {
+    margin-left: 62px;
+  }
+
+  .footer-ours-contacts__phone {
+    margin-left: 84px;
+    margin-right: 20px;
+  }
+}
+
+

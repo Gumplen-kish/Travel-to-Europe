@@ -19,8 +19,6 @@
 }
 
 .prices-preview__text {
-  width: 288px;
-  height: 215px;
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 17px;
@@ -32,7 +30,7 @@
 }
 
 .prices-preview__call {
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 9px;
   font-weight: 500;
   font-size: 18px;
@@ -194,4 +192,41 @@
 
 .prices-wrapper__button {
   .button-style-buy-tour();
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-top: 190px;
+  }
+
+  .prices-preview__title {
+    font-size: 30px;
+  }
+
+  .prices-preview__text {
+    padding-left: 21px;
+    padding-right: 17px;
+
+    &--complex {
+      margin-top: 0;
+    }
+  }
+
+  .prices-preview__call {
+    margin-top: 17px;
+  }
+
+  .prices-wrapper {
+    width: 288px;
+    height: 629px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
 }

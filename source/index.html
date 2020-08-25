@@ -83,7 +83,7 @@
         <div class="slider-slide slider-slide--1">
           <div class="slider-description">
             <h3 class="slider-description__title">Греция</h3>
-            <p class="slider-description__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+            <p class="slider-description__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных&nbsp;на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
             <button class="slider-description__button" type="button">Купить тур сейчас</button>
           </div>
           <div class="slider-comment slider-comment--Vlada">
@@ -153,8 +153,8 @@
       <div class="prices-wrapper prices-wrapper--complex">
         <h3 class="prices-wrapper__title prices-wrapper__title--complex">Комплексный</h3>
         <p class="prices-wrapper__rate prices-wrapper__rate--complex">$1999</p>
-        <p class="prices-wrapper__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-        <ul class="prices-wrapper__list">
+        <p class="prices-wrapper__text prices-wrapper__text--complex">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="prices-wrapper__list prices-wrapper__list--complex">
           <li class="prices-wrapper__item">
             <p class="prices-wrapper__item-text">Разработанный маршрут с гидом группы</p>
           </li>
@@ -168,7 +168,7 @@
             <p class="prices-wrapper__item-text">Экскурсии по удивительно красивым местам Европы</p>
           </li>
         </ul>
-        <button class="prices-wrapper__button" type="button">Купить тур сейчас</button>
+        <button class="prices-wrapper__button prices-wrapper__button--complex" type="button">Купить тур сейчас</button>
       </div>
       <div class="prices-wrapper prices-wrapper--economical">
         <h3 class="prices-wrapper__title prices-wrapper__title--economical">Экономный</h3>
@@ -191,25 +191,27 @@
             <p class="prices-wrapper__item-text">Экскурсии по удивительно красивым местам Европы</p>
           </li>
         </ul>
-        <button class="prices-wrapper__button" type="button">Купить тур сейчас</button>
+        <button class="prices-wrapper__button prices-wrapper__button--economical" type="button">Купить тур сейчас</button>
       </div>
     </section>
     <section class="feedback">
-      <h2 class="feedback-title">У Вас остались вопросы?</h2>
-      <p class="feedback-text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <ul class="feedback-list">
-        <li class="feedback-item">
-          <label class="feedback-item__label feedback-item__label--required" for="user-phone"></label>
-          <input class="feedback-item__input feedback-item__input--phone" type="text" name="user-phone" id="user-phone" placeholder=" +7 Введите 10 цифр номера" required>
-        </li>
-        <li class="feedback-item">
-          <label class="feedback-item__label feedback-item__label--email" for="user-email"></label>
-          <input class="feedback-item__input feedback-item__input--email" type="text" name="user-email" id="user-email" placeholder="E-mail">
-        </li>
-        <li class="feedback-item">
-          <button class="feedback-item__button" type="submit">Отправить</button>
-        </li>
-      </ul>
+      <div class="feedback-wrapper">
+        <h2 class="feedback-title">У Вас остались вопросы?</h2>
+        <p class="feedback-text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <ul class="feedback-list">
+          <li class="feedback-item">
+            <label class="feedback-item__label feedback-item__label--required" for="user-phone"></label>
+            <input class="feedback-item__input feedback-item__input--phone" type="text" name="user-phone" id="user-phone" placeholder=" +7 Введите 10 цифр номера" required>
+          </li>
+          <li class="feedback-item">
+            <label class="feedback-item__label feedback-item__label--email" for="user-email"></label>
+            <input class="feedback-item__input feedback-item__input--email" type="text" name="user-email" id="user-email" placeholder="E-mail">
+          </li>
+          <li class="feedback-item">
+            <button class="feedback-item__button" type="submit">Отправить</button>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="footer">

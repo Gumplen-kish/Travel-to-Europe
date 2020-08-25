@@ -149,6 +149,7 @@
 
 @media (min-width: @tablet-width) {
   .slider-container {
+    margin-left: 0;
     margin-top: 76px;
   }
 
@@ -161,14 +162,81 @@
   }
 
   .slider-description {
+    margin-left: 0;
+    padding-left: 21px;
+    padding-right: 21px;
 
+    &::before {
+      top: 363px;
+      left: 0;
+      width: 768px;
+      height: 415px;
+      margin-left: 0;
+      background-image: url("../../img/comment-background-tablet.png");
+      background-repeat: no-repeat;
+      background-size: 768px 415px;
+      background-position: 100% 100%;
+    }
   }
 
   .slider-description__title {
     font-size: 30px;
   }
 
+  .slider-description__text {
+    width: 726px;
+    height: 168px;
+    margin-bottom: 19px;
+    letter-spacing: 0.57px;
+  }
+
   .slider-description__button {
-    
+    width: 250px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 238px;
+
+  }
+
+  .slider-comment {
+    top: 110px;
+    left: 193px;
+    width: 382px;
+    height: 367px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .slider-comment__title {
+    margin-top: 30px;
+    margin-bottom: 28px;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 1.6px;
+
+    &::after {
+      top: 48px;
+      left: 30px;
+    }
+  }
+
+  .slider-comment__text {
+    width: 322px;
+    height: 164px;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+
+  .slider-comment__avtor {
+    margin-top: 47px;
+    padding-left: 82px;
+    &::before {
+      top: -12px;
+      left: 31px;
+    }
   }
 }
