@@ -1,0 +1,106 @@
+.places-visited__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 89px;
+}
+
+.places-visited__wrapper-title {
+  height: 36px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.places-visited__wrapper-text {
+  height: 84px;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-bottom: 3px;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  text-align: center;
+  letter-spacing: 0.59px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.places-visited__involucre {
+  margin-left: 16px;
+}
+
+.places-visited__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3px;
+}
+
+.places-visited__item {
+  position: relative;
+  display: block;
+  margin-bottom: 31px;
+  margin-top: 0;
+}
+
+.places-visited__wrapper-country {
+  position: absolute;
+  content: "";
+  bottom: 4px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  height: 61px;
+  align-items: center;
+  background-color: @white;
+}
+
+.places-visited__wrapper-country-name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: @tablet-width) {
+  .places-visited__wrapper {
+    margin-top: 55px;
+  }
+
+  .places-visited__wrapper-title {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+
+  .places-visited__wrapper-text {
+    padding-left: 198px;
+    padding-right: 214px;
+  }
+
+  .places-visited__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 9px;
+    justify-content: space-around;
+    padding-left: 52px;
+    padding-right: 67px;
+  }
+
+  .places-visited__item {
+    margin-bottom: 15px;
+
+    &:nth-of-type(3) {
+      margin-bottom: 27px;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 27px;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.prices {
+  margin-top: 146px;
+  text-align: center;
+}
+
+.prices-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-preview__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  letter-spacing: 1.5px;
+}
+
+.prices-preview__text {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 17px;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  text-align: center;
+  letter-spacing: 1.02px;
+}
+
+.prices-preview__call {
+  margin-top: 2px;
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  /* identical to box height, or 189% */
+  /* темный */
+  color: #141517;
+  letter-spacing: 1.4px;
+}
+
+.prices-preview__phone {
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+  text-align: center;
+  text-decoration-line: underline;
+  color: @background-button;
+}
+
+.prices-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+  margin-right: 16px;
+  margin-top: 39px;
+
+  &--complex {
+    border: 3px solid @background-button;
+    border-radius: 6px;
+  }
+
+  &--economical {
+    margin-top: 29px;
+    border: 1px solid rgba(44, 46, 63, 0.3);
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+}
+
+.prices-wrapper__title {
+  margin-top: 29px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 1.35px;
+
+  &--complex {
+    color: @background-button;
+  }
+
+  &--economical {
+    letter-spacing: 0.2px;
+  }
+}
+
+.prices-wrapper__rate {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+
+  &--complex {
+    color: @background-button;
+  }
+
+  &--economical {
+    letter-spacing: 0.2px;
+    margin-left: 92px;
+    margin-right: 102px;
+  }
+}
+
+.prices-wrapper__text {
+  position: relative;
+  width: 248px;
+  height: 71px;
+  margin-top: 6px;
+  margin-left: 18px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  letter-spacing: 0.97px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: @background-button;
+    opacity: 0.5;
+  }
+
+  &--economical {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 80px;
+      left: 2px;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(44, 46, 63, 0.3);
+      opacity: 0.5;
+    }
+  }
+}
+
+.prices-wrapper__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prices-wrapper__item {
+  position: relative;
+  margin-bottom: 4px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 22px;
+    width: 14px;
+    height: 12px;
+    display: block;
+    background-image: url("../../img/Path.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+  }
+
+  &:nth-of-type(3) {
+    margin-top: 5px;
+    margin-bottom: 11px;
+  }
+
+  &--economical {
+    margin-bottom: 7px;
+  }
+}
+
+.prices-wrapper__item-text {
+  width: 225px;
+  margin: 0;
+  margin-left: 45px;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+  letter-spacing: 1.3px;
+}
+
+.prices-wrapper__button {
+  .button-style-buy-tour();
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-top: 190px;
+  }
+
+  .prices-preview__title {
+    font-size: 30px;
+  }
+
+  .prices-preview__text {
+    padding-left: 21px;
+    padding-right: 17px;
+
+    &--complex {
+      margin-top: 0;
+    }
+  }
+
+  .prices-preview__call {
+    margin-top: 17px;
+  }
+
+  .prices-wrapper {
+    width: 288px;
+    height: 629px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}

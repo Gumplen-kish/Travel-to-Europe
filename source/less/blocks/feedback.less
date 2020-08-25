@@ -1,0 +1,138 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 78px;
+  background-color: @feedback-background;
+}
+
+.feedback-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  /* or 128% */
+  text-align: center;
+  color: @feedback-text;
+  letter-spacing: 0.85px;
+}
+
+.feedback-text {
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  text-align: center;
+  letter-spacing: 0.9px;
+  color: @feedback-text;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+.feedback-item {
+  margin-top: 3px;
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+.feedback-item__input {
+  width: 288px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 15px;
+  background: @white;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  box-sizing: border-box;
+
+  &::placeholder {
+    letter-spacing: 1.24px;
+  }
+
+  &--email {
+    padding-left: 15px;
+    padding-top: 6px;
+  }
+}
+
+.feedback-item__label {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: @feedback-text;
+
+  &--required::after {
+    position: absolute;
+    top: -7px;
+    left: 14px;
+    content: " *";
+    color: @background-button;
+  }
+}
+
+.feedback-item__button {
+  .button-style-buy-tour();
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    display: flex;
+    align-items: center;
+    width: 768px;
+    height: 455px;
+    margin-top: 120px;
+    background-image: url("../../img/feedback-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px 456px;
+  }
+
+  .feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 658px;
+    height: 311px;
+    background-color: @white;
+  }
+
+  .feedback-title {
+    margin-top: 48px;
+    margin-bottom: 13px;
+  }
+
+  .feedback-text {
+    margin-bottom: 19px;
+  }
+
+  .feedback-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feedback-item {
+    margin-bottom: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .feedback-item__input {
+    width: 269px;
+  }
+
+  .feedback-item__button {
+    width: 250px;
+  }
+}
